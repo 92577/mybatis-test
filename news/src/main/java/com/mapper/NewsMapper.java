@@ -1,6 +1,6 @@
-package mapper;
+package com.mapper;
 
-import com.News;
+import com.domain.News;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
