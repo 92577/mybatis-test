@@ -11,6 +11,6 @@ public class NewsService
 
 	public News selectNews(int id)
 	{
-		return newsMapper.select(id);
+		return newsMapper.selectNews(id);
 	}
 }

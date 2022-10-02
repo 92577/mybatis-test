@@ -9,5 +9,5 @@ import org.apache.ibatis.annotations.Select;
 public interface NewsMapper
 {
 	@Select("select * from news where id = #{id}")
-	News select(@Param("id") int id);
+	News selectNews(@Param("id") int id);
 }
