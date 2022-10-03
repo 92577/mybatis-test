@@ -10,6 +10,7 @@ public class CrosConfig implements WebMvcConfigurer
 	@Override
 	public void addCorsMappings(CorsRegistry registry)
 	{
+		// springboot2.4之后配置跨域用allowOriginPatterns代替
 		registry.addMapping("/**")
 				// 设置允许跨域请求的域名
 				.allowedOriginPatterns("*")
