@@ -4,6 +4,8 @@ import com.domain.News;
 import com.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,6 +25,12 @@ public class NewsController
 	public News selectNews(@PathVariable("id") int id)
 	{
 		return newsService.selectNews(id);
+	}
+
+	@PostMapping("/insert")
+	public void insertNews(@RequestBody News news)
+	{
+		System.out.println(news);
 	}
 
 }
